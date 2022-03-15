@@ -1,4 +1,4 @@
-var memory = [];
+var memory = [0];
 var pointer = 0;
 var clipboard = 0;
 
@@ -14,7 +14,7 @@ function process(e) {
     div.innerText = `>> ${e.key}`;
     switch(e.key) {
         case 'Delete':
-            memory = [];
+            memory = [0];
             pointer = 0;
             clipboard = 0;
             main.innerHTML = '';
